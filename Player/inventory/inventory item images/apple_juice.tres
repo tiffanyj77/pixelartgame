@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="InvItem" format=3 uid="uid://blerwhpj5kqoc"]
+
+[ext_resource type="Script" uid="uid://dfg0xnbod8xxf" path="res://Player/inventory/inventory_item.gd" id="1_b0kln"]
+[ext_resource type="Texture2D" uid="uid://ner13ubqh3ai" path="res://Player/inventory/inventory item images/inventory-apple-juice2.png" id="2_0pd8q"]
+
+[resource]
+script = ExtResource("1_b0kln")
+name = "apple juice"
+texture = ExtResource("2_0pd8q")
+metadata/_custom_type_script = "uid://dfg0xnbod8xxf"

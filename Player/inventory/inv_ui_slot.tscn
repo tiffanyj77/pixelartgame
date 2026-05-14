@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://ct1ittiu04d8t"]
+
+[ext_resource type="Texture2D" uid="uid://bedelw3mq5hdl" path="res://Player/inventory/inventory item images/inventory-slot.png" id="1_clqu5"]
+
+[node name="inv_UI_slot" type="Panel" unique_id=432608472]
+offset_right = 16.0
+offset_bottom = 16.0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1786551296]
+texture = ExtResource("1_clqu5")
+centered = false
