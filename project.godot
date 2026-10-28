@@ -12,7 +12,7 @@ config_version=5
 
 config/name="pixelartgame"
 run/main_scene="uid://bcl6hnfxs1kba"
-config/features=PackedStringArray("4.6", "Forward Plus")
+config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
 [display]
@@ -22,6 +22,10 @@ window/size/viewport_height=180
 window/size/window_width_override=1920
 window/size/window_height_override=1080
 window/stretch/mode="viewport"
+
+[dotnet]
+
+project/assembly_name="pixelartgame"
 
 [importer_defaults]
 

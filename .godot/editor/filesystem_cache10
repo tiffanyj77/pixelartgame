@@ -1,0 +1,28 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1792954449
+inventory.gd::GDScript::7000766428104935613::1789329836::0::1::::Inv<>Resource<><>0<>0<><>::
+player.tscn::PackedScene::2817727207017646351::1789329836::0::1::::<><><>0<>0<><>::uid://sm6gj2k7dd3p::::res://Player/Scripts/player.gd<>uid://cilx0l03rplga::::res://Player/inventory/inv_ui.tscn<>uid://cjpieo78qofms::::res://Player/Scripts/SpriteFINAL.png
+playground.tscn::PackedScene::2551401945194594266::1789592345::0::1::::<><><>0<>0<><>::uid://bge6s5cny58lf::::res://player.tscn<>uid://bwn1y827frqo7::::res://Player/inventory/main_inventory.tres<>uid://1vog8jrhvp64::::res://Player/Sprites/background_final.png
+README.md::TextFile::-1::1789329836::0::1::::<><><>0<>0<><>::
+::res://Player/::1789329836
+::res://Player/inventory/::1789329836
+inventory_item.gd::GDScript::7524152218862583591::1789329836::0::1::::InvItem<>Resource<><>0<>0<><>::
+inv_ui.gd::GDScript::3672416151666977220::1789329836::0::1::::<>Control<><>0<>0<><>::
+inv_ui.tscn::PackedScene::5358502025138843840::1789329836::0::1::::<><><>0<>0<><>::uid://bsk7fmbiqtw5y::::res://Player/inventory/inv_ui.gd<>uid://c424sw5btb0lp::::res://Player/inventory/inventory item images/inventory-background.png
+inv_ui_slot.tscn::PackedScene::6160623895386045689::1789329836::0::1::::<><><>0<>0<><>::uid://bedelw3mq5hdl::::res://Player/inventory/inventory item images/inventory-slot.png
+main_inventory.tres::Resource/Inv::3959035431839812564::1789329836::0::1::::<><><>0<>0<><>::uid://dfg0xnbod8xxf::::res://Player/inventory/inventory_item.gd<>uid://c60hun5cqviyf::::res://inventory.gd
+::res://Player/inventory/inventory item images/::1789592272
+apple_juice.tres::Resource/InvItem::3167827342355572142::1789329836::0::1::::<><><>0<>0<><>::uid://dfg0xnbod8xxf::::res://Player/inventory/inventory_item.gd<>uid://ner13ubqh3ai::::res://Player/inventory/inventory item images/inventory-apple-juice2.png
+inventory-apple-juice2.png::CompressedTexture2D::921792599446233936::1789329836::1789592272::1::::<><><>0<>0<>decf5a0e1c71c2f8b9cd4194f02964fa<>res://.godot/imported/inventory-apple-juice2.png-f8dc483a6bec6c929481617e19a1b643.ctex::
+inventory-background.png::CompressedTexture2D::6865850171258000833::1789329836::1789592272::1::::<><><>0<>0<>d05ce3ab0c7dd4585ca6d54b7ff03b80<>res://.godot/imported/inventory-background.png-fd75a229a24b8fcc21592884fe1832cd.ctex::
+inventory-slot.png::CompressedTexture2D::2673632902547450237::1789329836::1789592272::1::::<><><>0<>0<>622068e9657514f62f4d71f383239efc<>res://.godot/imported/inventory-slot.png-8ffe507b974878465d190a0c88f42a79.ctex::
+::res://Player/Scripts/::1789592272
+player.gd::GDScript::1290065174989599851::1789329836::0::1::::Player<>CharacterBody2D<><>0<>0<><>::
+SpriteFINAL.png::CompressedTexture2D::5436000291839091662::1789329836::1789592272::1::::<><><>0<>0<>61f226e81834deef261c36966d5b656c<>res://.godot/imported/SpriteFINAL.png-c7db5398a1479d7c9477d615207e2ea7.ctex::
+::res://Player/Sprites/::1792954449
+background_final.png::CompressedTexture2D::1869124368042652015::1789329836::1789592272::1::::<><><>0<>0<>42bda3aad910c5fb08f908b88a93c3a3<>res://.godot/imported/background_final.png-ad17314c726be9288768f051b37717af.ctex::
+inventory.png::CompressedTexture2D::3156180606752603867::1789329836::1789592272::1::::<><><>0<>0<>5867ac77c3a8093d0caaccb59255fa26<>res://.godot/imported/inventory.png-9a3648a343de11abbfce2434b1b489e0.ctex::
+NPC.png::CompressedTexture2D::8171111629513660857::1789329836::1789592272::1::::<><><>0<>0<>7711ec1f8f9a41ef405bf32ed74647ce<>res://.godot/imported/NPC.png-d09d61196cd224dd00c3712f327bd156.ctex::
+Sprite-0003-Sheet.png::CompressedTexture2D::2017567706314630303::1792954433::1792954449::1::::<><><>0<>0<>946900cc9ec0af8379708a073284fdc6<>res://.godot/imported/Sprite-0003-Sheet.png-bada1a2c402785dc59c599e457aa791c.ctex::
+::res://Tile Maps/::1792954439
+Grass_01.tscn::PackedScene::6237269825872558611::1789329836::0::1::::<><><>0<>0<><>::uid://b4cd7k2lg30f4::::res://Player/Sprites/background1.png
