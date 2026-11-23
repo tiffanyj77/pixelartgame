@@ -20,7 +20,7 @@ inventory-slot.png::CompressedTexture2D::2673632902547450237::1789329836::178959
 ::res://Player/Scripts/::1795463400
 player.gd::GDScript::1290065174989599851::1789329836::0::1::::Player<>CharacterBody2D<><>0<>0<><>::
 SpriteFINAL.png::CompressedTexture2D::5436000291839091662::1789329836::1789592272::1::::<><><>0<>0<>61f226e81834deef261c36966d5b656c<>res://.godot/imported/SpriteFINAL.png-c7db5398a1479d7c9477d615207e2ea7.ctex::
-::res://Player/Sprites/::1795463564
+::res://Player/Sprites/::1795464081
 background_final.png::CompressedTexture2D::1869124368042652015::1789329836::1789592272::1::::<><><>0<>0<>42bda3aad910c5fb08f908b88a93c3a3<>res://.godot/imported/background_final.png-ad17314c726be9288768f051b37717af.ctex::
 connecting-background.png::CompressedTexture2D::4578224057014651776::1795463564::1795463564::1::::<><><>0<>0<>0b5fb7c333181692f31f941d30b08129<>res://.godot/imported/connecting-background.png-9383326aa1ebbb91e15e09e948cb9458.ctex::
 inventory.png::CompressedTexture2D::3156180606752603867::1789329836::1789592272::1::::<><><>0<>0<>5867ac77c3a8093d0caaccb59255fa26<>res://.godot/imported/inventory.png-9a3648a343de11abbfce2434b1b489e0.ctex::
@@ -30,5 +30,6 @@ Sprite-0003-Sheet.png::CompressedTexture2D::2017567706314630303::1792954433::179
 town.png::CompressedTexture2D::3064244790430450264::1795463564::1795463527::1::::<><><>0<>0<>92b4df7ab9ccc12213ba115172241068<>res://.godot/imported/town.png-598de6824f4a5e4c01834117d583bf32.ctex::
 treasure_chest.png::CompressedTexture2D::4070134763456012774::1795463391::1795463400::1::::<><><>0<>0<>0c7adc5509b81c5de42652fb6e9866ed<>res://.godot/imported/treasure_chest.png-010cb3a15cf8e38be39e0728393a4465.ctex::
 treasure_chest_key.png::CompressedTexture2D::5828736138874258335::1795463441::1795463441::1::::<><><>0<>0<>cbba62bbb9a3e06942afd45b87d6b730<>res://.godot/imported/treasure_chest_key.png-5ec1e716215c5ed44778357d8334c1f9.ctex::
+underground.png::CompressedTexture2D::8717495633212677689::1795464081::1795464081::1::::<><><>0<>0<>b1b8bab6234f898ebff3c42dbe1f8a79<>res://.godot/imported/underground.png-d801ef0bfdbb15c999f3d4c684f47e41.ctex::
 ::res://Tile Maps/::1792954439
 Grass_01.tscn::PackedScene::6237269825872558611::1789329836::0::1::::<><><>0<>0<><>::uid://b4cd7k2lg30f4::::res://Player/Sprites/background1.png
