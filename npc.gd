@@ -12,12 +12,32 @@ var state: String = "idle"
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 @onready var sprite_2d: Sprite2D = $Sprite2D
 
+@export var background: Sprite2D
+# @export var boundary_margin: float = 8.0
+
+@export var tilemap: TileMapLayer
+@export var boundary_margin: float = 8.0
+
+var map_bounds: Rect2
+
 var move_timer: float = 0.0
 
 func _ready():
-    starting_position = global_position
-    updateAnimation()
+    var tile_rect = tilemap.get_used_rect()
+    var tile_size = Vector2(tilemap.tile_set.tile_size)
 
+    var local_top_left = Vector2(tile_rect.position) * tile_size
+    var local_bottom_right = Vector2(tile_rect.end) * tile_size
+
+    var world_top_left = tilemap.to_global(local_top_left)
+    var world_bottom_right = tilemap.to_global(local_bottom_right)
+
+    map_bounds = Rect2(
+        world_top_left.min(world_bottom_right),
+        (world_bottom_right - world_top_left).abs()
+    )
+
+    updateAnimation()
 
 func _physics_process(delta):
     move_timer -= delta
@@ -36,6 +56,12 @@ func _physics_process(delta):
         updateAnimation()
 
     move_and_slide()
+    
+    
+    global_position = global_position.clamp(
+    map_bounds.position + Vector2.ONE * boundary_margin,
+    map_bounds.end - Vector2.ONE * boundary_margin
+)
 
 
 func choose_direction():
@@ -60,8 +86,6 @@ func choose_direction():
     elif global_position.y <= starting_position.y - wander_distance:
         direction = Vector2.DOWN
 
-
-
 func set_Direction() -> bool:
     var new_dir: Vector2 = cardinal_direction
 
@@ -79,7 +103,6 @@ func set_Direction() -> bool:
     cardinal_direction = new_dir
     return true
 
-
 func set_State() -> bool:
     var new_state: String = "idle" if direction == Vector2.ZERO else "walk"
 
@@ -91,12 +114,24 @@ func set_State() -> bool:
 
 
 func updateAnimation() -> void:
-    var animation_name = state + "_" + AnimDirection()
+    if state == "walk":
+        # Play the walking animation
+        animation_player.play("walk_" + AnimDirection())
 
-    if animation_player.has_animation(animation_name):
-        animation_player.play(animation_name)
-    else:
-        print("Missing animation: ", animation_name)
+    elif state == "idle":
+        # Stop the animation
+        animation_player.stop()
+
+        # Display a static frame facing the last direction
+        match cardinal_direction:
+            Vector2.DOWN:
+                sprite_2d.frame_coords = Vector2i(0, 0)
+            Vector2.UP:
+                sprite_2d.frame_coords = Vector2i(0, 3)
+            Vector2.LEFT:
+                sprite_2d.frame_coords = Vector2i(3, 4)
+            Vector2.RIGHT:
+                sprite_2d.frame_coords = Vector2i(3, 1)
 
 
 func AnimDirection() -> String:
